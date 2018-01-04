@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="evaporate_debug" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../build/evaporate_debug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/secret_debug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../" />
+			<Add directory="C:/dev/bullet" />
+			<Add directory="C:/dev/bullet/Bullet" />
+			<Add directory="C:/dev/irrlicht/include" />
+			<Add directory="C:/dev/evaporate/" />
+			<Add directory="C:/dev/b_libs/" />
+			<Add directory="C:/dev/MinGW/include" />
+			<Add directory="C:/dev/glew-1.13.0/src" />
+			<Add directory="C:/dev/stb" />
+		</Compiler>
+		<Linker>
+			<Add library="C:\dev\irrlicht\lib\Win32-gcc\libIrrlicht.a" />
+			<Add library="C:\dev\bullet\lib\libbullet.a" />
+			<Add library="C:\dev\MinGW\lib\libopengl32.a" />
+		</Linker>
+		<Unit filename="../main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
